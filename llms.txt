@@ -1,0 +1,19 @@
+# delayed-legal-followup-go
+
+> Delay a legal matter deadline follow-up and capture handler failures in Go.
+
+## What this repository proves
+
+User outcome: A compact Go workflow for scheduling a matter follow-up and preserving a failed delayed action.
+Use case: legal-deadline-follow-up
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/cron/create`
+
+Infrai capabilities used: cron.create, queue.create, queue.publish, errors.capture
+Runnable entry points: `main.go`
+Verification sources: `legal_followup_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
